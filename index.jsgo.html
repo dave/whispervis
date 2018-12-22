@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+	<meta http-equiv="Content-Security-Policy-Report-Only" content="default-src http: file:; child-src 'none'; object-src 'none'">
+
+</head>
+
+<body>
+	<p id="log">Loading...</p>
+	<script>
+        window.jsgoProgress = function(count, total) {
+            document.getElementById("log").innerHTML = count + "/" + total;
+        }
+	</script>
+    <script src="https://cdn.jsdelivr.net/gh/divan/whispervis@c395bc39dd76ba9d9118693da3d7bc90f234e5f9/js/three.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/divan/whispervis@c395bc39dd76ba9d9118693da3d7bc90f234e5f9/js/TrackballControls.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/gh/divan/whispervis@c395bc39dd76ba9d9118693da3d7bc90f234e5f9/js/fontawesome.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/divan/whispervis@c395bc39dd76ba9d9118693da3d7bc90f234e5f9/js/frappe-charts.js"></script>
+    <script src="{{ .Script }}"></script>
+</body>
+
+</html>

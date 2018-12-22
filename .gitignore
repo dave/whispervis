@@ -7,3 +7,4 @@ network.json
 data.json
 propagation.json
 .DS_Store
+.idea
